@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useMemo } from "react";
 
-const API_URL = "http://localhost:5000/api/internships";
+const API_URL =
+  "https://internshala-filter-backend.onrender.com/api/internships";
 
 function Dashboard() {
   const [internships, setInternships] = useState([]);
