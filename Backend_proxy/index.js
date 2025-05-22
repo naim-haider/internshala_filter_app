@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-// const fetch = require("node-fetch"); // built-in in Node 18+
 const dotenv = require("dotenv");
 
 dotenv.config();
