@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Thumb styles */
+  .range-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1.25rem; /* 20px */
+    width: 1.25rem;
+    background-color: white;
+    border: 3px solid #008bdc;
+    border-radius: 9999px;
+    cursor: pointer;
+    margin-top: -0.4rem; /* aligns thumb with track */
+    transition: background-color 0.3s;
+  }
+
+  .range-thumb::-moz-range-thumb {
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: white;
+    border: 3px solid #008bdc;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  /* Track styles */
+  .range-thumb::-webkit-slider-runnable-track {
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: #008bdc;
+  }
+
+  .range-thumb::-moz-range-track {
+    height: 0.5rem;
+    border-radius: 9999px;
+    background-color: #008bdc;
+  }
+}
